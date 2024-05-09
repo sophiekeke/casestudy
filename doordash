@@ -7,7 +7,11 @@ Case study
 5:You mentioned the minimum detectable effect and sample size; could you please walk me through how to determine those and how long we should run the experiment?
 
 experiment/observational study:
+Observation Study: regression model and set delivery time as factor and check the correlation with refund rate on food cold and find the threshold(>mean)
+find control/treatment group(stratified and only difference is delivery time), and pull the historical data and find out whether they have difference in refund due to food cold(ratio)
 
+
+Experiment analysis:
 Need to speak out the H0/H1 null hypothesis and alternative hypothesis
 determine confidence level, 
 Formulating Hypotheses
