@@ -1,0 +1,11 @@
+Experiment
+   1. How can I reduce experiment time if I have many experiments in the backlog?
+   2. What if my minimal detectable effect is small, given that I have no issue with sample size?
+   3. How should I analyze the results?
+
+
+Ads:
+Pre-ranking -> Ranking -> Recommendation
+How can we evaluate the impact across the entire workflow?
+
+What is your proposal for choosing between the best outcome from each model (which results in fewer results/opportunities) versus exploring more candidates and providing a score to the downstream system?
