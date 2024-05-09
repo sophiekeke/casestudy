@@ -6,4 +6,65 @@ Case study
 4:If we need to conduct an experiment, how long would you run your A/B test for? How to design it?
 5:You mentioned the minimum detectable effect and sample size; could you please walk me through how to determine those and how long we should run the experiment?
 
-  
+some idea:
+1. Defining the Objective
+
+The main objective is to reduce the number of refunds due to cold food deliveries. This can be achieved by decreasing delivery times, which is hypothesized to result in warmer food upon arrival and thus fewer refund requests.
+2. Establishing the Minimum Detectable Effect (MDE)
+
+First, you need to determine what would be a meaningful reduction in refunds. For instance, if current data shows that 5% of deliveries result in cold food refunds, even a 1% reduction (to 4% refund rate) might have significant financial implications. The choice of MDE should balance statistical significance and business impact.
+3. Calculating the Baseline Metrics
+
+You need to gather baseline data:
+
+    Current refund rate due to cold food: Assume 5%
+    Average delivery times: Assume 30 minutes
+    Traffic and order volume: To determine sample sizes, know the average daily or weekly orders that meet the criteria for the study.
+
+4. Calculating Sample Size
+
+Assume you decide that detecting a 1% reduction in the refund rate is your MDE. Using a typical setup where alpha (error type I) = 0.05 and power = 0.8:
+
+import scipy.stats as stats
+
+# Desired alpha and power
+alpha = 0.05
+power = 0.8
+
+# Z-scores for the desired alpha and power
+z_alpha = stats.norm.ppf(1 - alpha/2)
+z_beta = stats.norm.ppf(power)
+
+# Baseline refund rate (p) and Minimum Detectable Effect (MDE)
+p = 0.05
+MDE = 0.01
+# Sample size calculation formula
+n = ((z_alpha + z_beta)**2 * 2 * p * (1 - p)) / (MDE**2)
+n = round(n)
+n
+
+5. Determining Experiment Duration
+
+Assuming DoorDash processes around 100,000 orders per week:
+# Estimated weekly traffic
+weekly_traffic = 100000
+
+# Total sample size needed for both groups
+total_sample_size = 2 * n
+
+# Duration of the experiment in weeks
+duration = total_sample_size / weekly_traffic
+duration = round(duration, 2)
+duration
+
+6. Implementation Considerations
+
+    Control vs. Treatment: You would have a control group with the standard delivery protocol and a treatment group where you implement strategies to reduce delivery times.
+    Data Monitoring: Implement real-time monitoring to track the impact of reduced delivery times on refund rates.
+    Adjustment for Variability: Consider external factors that might influence delivery times like weather or traffic, which may require adjustments in the analysis or extended experiment duration.
+
+7. Statistical Analysis
+
+Once the data is collected, you would use statistical tests to determine if the observed reduction in refund rates in the treatment group is statistically significant compared to the control group.
+
+
