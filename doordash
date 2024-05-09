@@ -6,6 +6,37 @@ Case study
 4:If we need to conduct an experiment, how long would you run your A/B test for? How to design it?
 5:You mentioned the minimum detectable effect and sample size; could you please walk me through how to determine those and how long we should run the experiment?
 
+Need to speak out the H0/H1 null hypothesis and alternative hypothesis
+determine confidence level, 
+Formulating Hypotheses
+
+Null Hypothesis (H₀)
+
+The null hypothesis states that there is no difference in the cold food refund rate between the control group (current delivery protocols) and the treatment group (improved delivery protocols). Mathematically, it can be expressed as:
+H0:ptreatment=pcontrolH0​:ptreatment​=pcontrol​
+where ptreatmentptreatment​ and pcontrolpcontrol​ are the refund rates for the treatment and control groups, respectively.
+Alternative Hypothesis (H₁)
+
+The alternative hypothesis asserts that there is a difference, specifically that the treatment results in a lower refund rate. This hypothesis is what you aim to prove through your experiment. It can be expressed as:
+H1:ptreatment<pcontrolH1​:ptreatment​<pcontrol​
+This is a one-sided test because you are only interested in whether the treatment group has a lower refund rate, not if it has a higher one.
+Choosing the Confidence Level
+
+The confidence level determines how sure you must be to reject the null hypothesis. Common practice is to use a 95% confidence level, which corresponds to an alpha value of 0.05. This means you are willing to accept a 5% chance of wrongly rejecting the null hypothesis (Type I error).
+Running the Experiment
+
+Once your hypotheses are set and your experimental design (including sample size) is established, you run the experiment according to the defined parameters. After collecting the data, you proceed with the evaluation.
+Evaluating the Results
+Statistical Test
+
+To evaluate the results, you typically use a test suitable for comparing proportions, such as the chi-squared test or a Z-test for proportion difference. Here’s how you could set up a Z-test:
+
+    Calculate the pooled proportion (combined rate of refunds from both groups), because under the null hypothesis, we assume the proportions are equal.
+    Calculate the Z-score, which measures the difference between your observed statistic and the null hypothesis, scaled by the standard error of the statistic.
+
+Decision Rule
+If the p-value is less than 0.05, you reject the null hypothesis, concluding that the improved delivery protocol significantly reduces the refund rate due to cold food. If the p-value is greater than 0.05, you fail to reject the null hypothesis, indicating that the evidence is not strong enough to support a significant effect.
+
 some idea:
 1. Defining the Objective
 
