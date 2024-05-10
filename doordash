@@ -145,3 +145,51 @@ Designing an experiment to understand the impact of reduced delivery time on ref
 
     Conclusion and Recommendations:
         Based on the analysis, draw conclusions about the impact of reducing delivery time on refund rates and provide recommendations to DoorDash based on the findings.
+
+To calculate the sample size needed for comparing refund rates between two groups (control and experimental), we can use the formula for sample size estimation in a two-sample proportion test. The formula for calculating sample size in this scenario is:
+
+n=(Zα/2×p1(1−p1)+Zβ×p2(1−p2))2(p1−p2)2n=(p1​−p2​)2(Zα/2​×p1​(1−p1​)
+​+Zβ​×p2​(1−p2​)
+
+​)2​
+
+Where:
+
+    nn = sample size per group
+    Zα/2Zα/2​ = Z-score corresponding to the desired level of significance (α)
+    ZβZβ​ = Z-score corresponding to the desired power (1-β)
+    p1p1​ = estimated proportion of refunds in the control group
+    p2p2​ = estimated proportion of refunds in the experimental group
+
+Given:
+
+    Current refund rate (p1) = 5% = 0.05
+    Improved refund rate (p2) = 2% = 0.02
+    Desired level of significance (α) = 0.05 (corresponding to a 95% confidence level)
+    Desired power (1-β) = Typically set at 0.80 or 0.90 for a power of 80% or 90% respectively. Let's use 0.80 for this example.
+
+We also need to find the corresponding Z-scores for the chosen level of significance and power. For a 95% confidence level, Zα/2Zα/2​ is approximately 1.96. For a power of 0.80, ZβZβ​ is approximately 0.84.
+
+Substitute these values into the formula:
+
+n=(1.96×0.05(1−0.05)+0.84×0.02(1−0.02))2(0.05−0.02)2n=(0.05−0.02)2(1.96×0.05(1−0.05)
+​+0.84×0.02(1−0.02)
+
+​)2​
+
+n=(1.96×0.05(0.95)+0.84×0.02(0.98))2(0.03)2n=(0.03)2(1.96×0.05(0.95)
+​+0.84×0.02(0.98)
+
+​)2​
+
+n=(1.96×0.218+0.84×0.14)20.032n=0.032(1.96×0.218+0.84×0.14)2​
+
+n=(0.427+0.117)20.032n=0.032(0.427+0.117)2​
+
+n=(0.544)20.0009n=0.0009(0.544)2​
+
+n≈0.295840.0009n≈0.00090.29584​
+
+n≈328.71n≈328.71
+
+Since you cannot have a fraction of a person, you would need to round up to the nearest whole number. Therefore, the calculated sample size per group is approximately 329. Therefore, you would need a total sample size of 329×2=658329×2=658 customers (329 in each group) to detect a significant difference between the refund rates with 80% power and 95% confidence level.
