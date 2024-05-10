@@ -105,3 +105,43 @@ duration
 Once the data is collected, you would use statistical tests to determine if the observed reduction in refund rates in the treatment group is statistically significant compared to the control group.
 
 
+Designing an experiment to understand the impact of reduced delivery time on refund rates involves several key steps. Here's a structured approach to design the experiment and conduct the analysis:
+
+    Define the Hypotheses:
+        Null Hypothesis (H0): Reducing delivery time will not have a significant impact on the refund rate.
+        Alternative Hypothesis (H1): Reducing delivery time will lead to a decrease in the refund rate.
+
+    Identify Variables:
+        Independent Variable: Delivery time (Reduced vs. Normal)
+        Dependent Variable: Refund rate
+
+    Experimental Design:
+        Randomized Controlled Trial (RCT): Randomly assign a portion of customers to receive deliveries with reduced delivery times (experimental group), while the rest receive deliveries with normal delivery times (control group).
+
+    Sample Size Determination:
+        Calculate the required sample size based on statistical power analysis to ensure that the experiment can detect a meaningful difference in refund rates with sufficient confidence.
+
+    Data Collection:
+        Collect data on delivery times and refund rates for both the experimental and control groups over a defined period.
+        Ensure that the data collection process is unbiased and representative of the target population.
+
+    Define the Confidence Level:
+        Choose a significance level (α), typically set at 0.05, which represents the probability of rejecting the null hypothesis when it is actually true.
+
+    Conduct Analysis:
+        Calculate the average refund rate for both the experimental and control groups.
+        Perform statistical tests, such as a t-test or chi-square test, to determine if there is a significant difference in refund rates between the two groups.
+
+    Interpret Results:
+        If the p-value is less than the chosen significance level (α), reject the null hypothesis and conclude that reducing delivery time has a significant impact on the refund rate.
+        If the p-value is greater than α, fail to reject the null hypothesis, indicating that there is not enough evidence to suggest that reducing delivery time affects the refund rate.
+
+    Consider Practical Significance:
+        Even if the results are statistically significant, consider the practical significance of the findings. Is the observed difference in refund rates large enough to warrant implementing changes to delivery times?
+
+    Additional Analysis:
+        Explore potential confounding variables, such as customer demographics or order types, that may influence the relationship between delivery time and refund rates.
+        Conduct sensitivity analysis to assess the robustness of the findings to different assumptions or model specifications.
+
+    Conclusion and Recommendations:
+        Based on the analysis, draw conclusions about the impact of reducing delivery time on refund rates and provide recommendations to DoorDash based on the findings.
