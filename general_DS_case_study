@@ -1,0 +1,51 @@
+https://www.1point3acres.com/bbs/thread-330947-1-1.html
+
+# How to Crack the Data Challenge
+
+之前发的 `how to crack the data challenge` 得到大家好评，很多战友们发来站内信询问如何准备面试。于是再接再厉，把自己的经验总结出来，造福更多的战友们！
+
+先说一下自己的情况。我自己是转专业的，没有相关的学位，国内学校普通，国外更是 3 流大学读的研究生，年纪还比较大，资质普通的不能再普通的普通人。但是我比较善于总结，比较有耐心（其实就是挂的太多了）。说这些就是希望鼓励那些转专业没有啥信心的同学们，我这么不利的情况下都可以做到，相信只要你不放弃，有策略的去准备，最后一定能有个好结果的。
+
+广告: 以上讲的内容比较抽象，下面我结合一道经典的 recommendation system case study 面试题来做举例说明。
+
+## 实战面试题 - 广告推荐系统设计
+
+### Interview Question: How to design a recommendation system to optimize ads efficiency on Facebook Platform?
+
+推荐系统问题是 case study 面试的常见内容，类似的大部分问题主要是关注在推荐系统 content relevance & personalization 的方向。而这道题中又引入了在线广告这个场景，因此考察角度会更加多样化。
+
+这道题目中包含的 11 个 follow-ups 来自于我在工作和面试中的经验总结，基本包含了数据科学不同岗位 (Data Analyst, Data Scientist, Machine Learning Engineer) 面试中的常见考点，希望能给大家在面试备考方向上提供一些参考。
+
+### Q1: How to define "ads efficiency"?
+
+这一步就是我在前面提到的 "clarify questions and define metrics"。它在任何数据科学岗位的 case study 面试中都是重要环节。在很多情况下面试官甚至会故意在介绍面试题的时候不给出清晰的 metric definition，而是希望求职者主动与面试官沟通来 clarifiy 这些细节。
+
+回到这个问题，对于 efficiency 的定义首先可以从每个广告推荐商品对应的 engagement metrics 入手，包括: impressions, clicks, conversions, conversions without cancellation 等等。
+
+进一步地，我们可以把广告相关的 cost 引入到 efficiency 的定义，包括: Cost per Click (CPC), Cost per Acquisition (CPA), Return on Investment (ROI) 等。此外，如果求职者在广告行业有一些 domain knowledge 的话，还可以讨论一些 advanced metrics，比如 ads incremental value，即对比没有广告情况下 organic traffic 带来的 revenue 与有广告情况下整体 revenue 的增量差值。其他可以提到的影响 ads efficiency 定义的因素还包括 ads attribution logic, user lifetime value (LTV) 等。
+
+对这个问题的讨论可以算是 Data Analyst 面试最关键的环节，它会与后续的实验设计等步骤相关联，因此讨论得会比较细致。而对于 Machine Learning Engineer 岗位的面试，我们一般不会在这一步停留过长时间。
+
+### Q2: What data do you need?
+
+这一步包括 feature definition 和 table schema design。在实际工作中很多情况下我们做数据分析或者建模工作所需要的数据并不是现成的，我们需要自己定义 table schema 甚至自己在产品中添加 log 来收集数据。这也是实际工作与 kaggle competitions 或 course projects 的区别之一。
+
+Table schema design 并不难，我们需要注意结合数据内容的安全级别和数据量大小把信息分类存放。
+
+#### Table Schema Examples
+
+- **User profile table**
+  | USER ID | USER NAME | NATIONALITY | ACCOUNT CREATION TIME |
+  |---------|-----------|-------------|-----------------------|
+
+- **Product feature table**
+  | PRODUCT ID | PRICE | COLOR | TEXTURE |
+  |------------|-------|-------|---------|
+
+- **User-item activities table**
+  | USER ID | PRODUCT ID | IMPRESSION | CLICK |
+  |---------|------------|------------|-------|
+
+- **Ads table**
+  | CAMPAIGN ID | AD ID | PRODUCT LIST | AUDIENCE GROUP |
+  |-------------|-------|--------------|----------------|
