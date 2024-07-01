@@ -1,5 +1,16 @@
-https://www.1point3acres.com/bbs/thread-799358-1-1.html
-python部分就是把sql写的代码转换成python而事实上python部分是一个algorithm题目
+# References
+
+## People 1
+- [https://www.1point3acres.com/bbs/thread-799358-1-1.html](https://www.1point3acres.com/bbs/thread-799358-1-1.html)
+- Python部分就是把SQL写的代码转换成Python而事实上Python部分是一个algorithm题目
+
+## People 2
+- [https://www.1point3acres.com/bbs/thread-914344-1-1.html](https://www.1point3acres.com/bbs/thread-914344-1-1.html)
+- 第一轮techscreen考了SQL
+- 第二轮casestudy是关于user onboarding tutorial里对一个步骤进行改变怎么evaluate
+
+This markdown includes the references and descriptions formatted for inclusion in a GitHub markdown file.
+
 
 # SQL Table Structures
 
