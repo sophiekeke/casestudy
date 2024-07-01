@@ -1,3 +1,6 @@
+https://www.1point3acres.com/bbs/thread-799358-1-1.html
+python部分就是把sql写的代码转换成python而事实上python部分是一个algorithm题目
+
 # SQL Table Structures
 
 ## Table: `logical_cluster`
