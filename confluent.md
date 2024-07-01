@@ -28,3 +28,5 @@
 Write a query to get the count of orgs created per day in Nov 2020 and the 5-day rolling aggregation (i.e., number of orgs created in the past 5 days).
 
 
+## 2nd Question
+Write a query to get the number of 'kafka', 'connect', and 'ksql' clusters that were created by customers in August 2020 and September 2020.
