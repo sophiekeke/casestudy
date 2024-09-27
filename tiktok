@@ -14,6 +14,19 @@ What is your proposal for choosing between the best outcome from each model (whi
 
 
 https://www.youtube.com/watch?v=1xh1Uj22YOU
+# Best DAU Question
+
+Let's say that you work at TikTok. The goal for the company next quarter is to increase the daily active users metric (DAU).
+
+- **Executive A** believes the best way to increase DAU is to improve the recommendation algorithm in TikTok's "For You" feature (TikTok news feed).
+- **Executive B** believes the best way to increase DAU is to acquire more new users.
+- **Executive C** believes the best way to increase DAU is to improve the creator tools.
+
+The engineering team must prioritize one feature at a time.
+
+### 1. How do you figure out which executive is right?
+### 2. What data points and metrics would help validate your choice?
+
 Tricky TikTok Data Science Case Study Interview Question - Best DAU
 
 Background research
